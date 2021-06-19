@@ -4,36 +4,77 @@
       Form About You
     </h1>
 
-<form method="post" action="/reflectFormData" class="bg-info">
-  Enter your name:
-  <input type="text"
-         name="fullname"
-         placeholder="Full Name"><br><br>
-  When were you born?
-  <input type="date"
-         name="birthday">
-<br>
-<br>
 
-  Tell your Favorite Joke<br>
-  <textarea name="joke" rows="10" cols="40"></textarea>
-  <br>
-  <br>
+<div class="row">
+  <div class="col">
+    <form method="post" action="/reflectFormData" class="bg-info">
+      Enter your name:
+      <input type="text"
+            name="fullname"
+            placeholder="Full Name"><br><br>
+      Where were you born?
+      <input type="text"
+            name="birthday"
+            placeholder="Hometown">
+    <br>
+    <br>
 
- What are your interests:<br>
-  reading <input type="checkbox" name="interest" value="Reading"><br>
-  coding  <input type="checkbox" name="interest" value="Coding"><br>
-  singing <input type="checkbox" name="interest" value="Singing"><br>
-  video games
-          <input type="checkbox" name="interest" value="Video Games"><br>
-  meditation
-          <input type="checkbox" name="interest" value="Meditation"><br>
-  <hr>
+      Tell your Favorite Joke<br>
+      <textarea name="joke" rows="10" cols="40"></textarea>
+      <br>
+      <br>
 
-  <input type="submit" value="Register now">
-</form>
+    What are your interests:<br>
+      reading <input type="checkbox" name="interest" value="Reading"><br>
+      coding  <input type="checkbox" name="interest" value="Coding"><br>
+      singing <input type="checkbox" name="interest" value="Singing"><br>
+      video games
+              <input type="checkbox" name="interest" value="Video Games"><br>
+      meditation
+              <input type="checkbox" name="interest" value="Meditation"><br>
 
-<hr>
+    <br>
+    Do you have a pet?<br>
+    <input type="radio" name="pet" value="Yes">Yes
+    <br>
+    <input type="radio" name="pet" value="No">No
+    <br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+    <div class="col bg-warning">
+      <div class="jumbotron">
+        <h4>Because I couldnt figure out a way to include a table, here you go.<br>I'm Multitasking with this page.</h4>
+      </div>
+      <br>
+      This Table Explains simple Color Mixtures
+      <br>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Red</th>
+            <th>Blue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Yellow</td>
+            <td>Orange</td>
+            <td>Green</td>
+          </tr>
+          <tr>
+            <td>White</td>
+            <td>Pink</td>
+            <td>Light Blue? Sky Blue?</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    </div>
+</div>
+
 
 
 <%- include('bootfooter') -%>

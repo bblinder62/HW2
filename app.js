@@ -67,6 +67,7 @@ app.post("/reflectFormData", (req, res)=>{
   res.locals.birthday=req.body.birthday
   res.locals.joke=req.body.joke
   res.locals.interest=req.body.interest
+  res.locals.pet=req.body.pet
   res.render("reflectData")
 })
 

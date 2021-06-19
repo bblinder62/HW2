@@ -5,17 +5,31 @@
     <div class="jumbotron">
         <h1>A Page About <%=fullname%></h1>
     </div>
+    <div class="bg-light">
     <br>
-    You were born on <%=birthday%>
+    You are from <%=birthday%>
     <br>
     <br>
     your favorite joke is:<br>
     <p><%=joke%></p>
     you are interested in:<br>
     <ul>
+    <% try{%>
     <%interest.map((item)=>{%>
         <li><%=item%></li>
     <%})%>
+    <%}catch{%>
+        <li><%=interest%></li>
+    <%}%>
+    </ul>
+    <%if(pet=="Yes"){%>
+        <p>You have a pet.</p>
+    <%}else{%>
+        <p>You do not have a pet.</p>
+    <%}%>
+
+    </div>
+
 
     
 
