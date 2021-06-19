@@ -1,0 +1,39 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+    <h1>
+      Form About You
+    </h1>
+
+<form method="post" action="/reflectFormData" class="bg-info">
+  Enter your name:
+  <input type="text"
+         name="fullname"
+         placeholder="Full Name"><br><br>
+  When were you born?
+  <input type="date"
+         name="birthday">
+<br>
+<br>
+
+  Tell your Favorite Joke<br>
+  <textarea name="joke" rows="10" cols="40"></textarea>
+  <br>
+  <br>
+
+ What are your interests:<br>
+  reading <input type="checkbox" name="interest" value="Reading"><br>
+  coding  <input type="checkbox" name="interest" value="Coding"><br>
+  singing <input type="checkbox" name="interest" value="Singing"><br>
+  video games
+          <input type="checkbox" name="interest" value="Video Games"><br>
+  meditation
+          <input type="checkbox" name="interest" value="Meditation"><br>
+  <hr>
+
+  <input type="submit" value="Register now">
+</form>
+
+<hr>
+
+
+<%- include('bootfooter') -%>

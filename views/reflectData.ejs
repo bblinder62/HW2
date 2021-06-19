@@ -1,0 +1,24 @@
+<%- include('bootheader') -%>
+
+<%- include('menubar') -%>
+
+    <div class="jumbotron">
+        <h1>A Page About <%=fullname%></h1>
+    </div>
+    <br>
+    You were born on <%=birthday%>
+    <br>
+    <br>
+    your favorite joke is:<br>
+    <p><%=joke%></p>
+    you are interested in:<br>
+    <ul>
+    <%interest.map((item)=>{%>
+        <li><%=item%></li>
+    <%})%>
+
+    
+
+
+
+<%- include('bootfooter') -%>

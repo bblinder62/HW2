@@ -1,0 +1,22 @@
+<%- include('bootheader') -%>
+
+<%- include('menubar') -%>
+
+    <div class="jumbotron">
+        <h1>Use This Page To Search Amazon.com</h1>
+        <p>This site includes a wide variety of interesting things for sale, enter any keyword to see the top results</p>
+    </div>
+    <form method="post" action="/search" class="bg-warning">
+        Search:
+        <input type="text" name="input">
+        <input type="image" src="/images/Search.png" alt="submit">
+
+    </form>
+
+    <hr>
+    <h3> This is where All your results would show up</h3>
+    <p><h4>Sadly, they do not show up because I could not figure out how in the world to use the amazon API and the recipe API stopped working</h4></p>
+
+
+<%- include('bootfooter') -%>
+
